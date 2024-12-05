@@ -1,0 +1,28 @@
+/* Light Theme */
+body.light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  button {
+    color: black;
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: black;
+    color: white;
+  }
+  
+  button {
+    color: white;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
