@@ -13,10 +13,13 @@ body {
   color: #333; /* Default text color */
   width: 100%;
 }
-.logo{
+
+/* Logo */
+.logo {
   width: 50px;
   height: 50px;
 }
+
 /* Dark Mode Styles */
 .dark {
   background-color: #000000;
@@ -160,7 +163,6 @@ body {
   }
 }
 
-
 /* Button Styles */
 .ant-btn-primary {
   background-color: #007bff;
@@ -205,5 +207,70 @@ body {
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); /* 2 columns for smaller screens */
+    gap: 5px;
+  }
+
+  .grid-square {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title-container {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .score {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .marvel, .studios {
+    font-size: 3rem; /* Adjust text size */
+  }
+
+  .wrapper {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+
+  .ant-btn-primary {
+    font-size: 14px; /* Smaller button size */
+    padding: 8px 16px;
+  }
+}
+
+/* For screens smaller than 480px (phones in portrait mode) */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 4,1fr; /* 1 column layout for very small screens */
+  }
+
+  .grid-square {
+    width: 70px;
+    height: 70px;
+  }
+
+  .title-container {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .score {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .marvel, .studios {
+    font-size: 2.5rem; /* Adjust text size */
+  }
+
+  .ant-btn-primary {
+    font-size: 12px; /* Smaller button size */
+    padding: 6px 12px;
   }
 }
